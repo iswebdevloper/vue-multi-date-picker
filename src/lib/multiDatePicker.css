@@ -14,9 +14,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
-  min-width: 195px;
-  max-width: 230px;
+  flex-wrap: nowrap;
+  min-width: 100px;
+  max-width: 100px;
 }
 .pick-panel{
   width: 280px;
@@ -32,7 +32,8 @@
   border-radius: 2px;
   line-height: 20px;
   margin: 5px 0;
-  z-index: 10;
+  z-index: 1000;
+  bottom: 0;
 }
  
 .last-year:before{content: "<<"}
