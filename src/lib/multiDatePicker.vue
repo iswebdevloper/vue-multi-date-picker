@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="date">
     <div class="dp-mask" v-show="panelShow" @click="panelShow = false"></div>
     <div class="selected-date" @click="panelShow = !panelShow">
-      <div style="display: flex;flex-wrap: wrap;" v-if="multi">
+      <div style="display: flex;flex-wrap: nowrap;" v-if="multi">
         <div class="sel-values" v-for="(item,index) in selected" :key="index" >
           {{format(item)}}
         </div>
